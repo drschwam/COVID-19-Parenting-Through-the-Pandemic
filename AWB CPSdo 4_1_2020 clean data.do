@@ -1,8 +1,12 @@
-* American Workers Blog - Workers with Children
+* COMMENTARY (The RAND Blog)
+* Title: Parenting Through the Pandemic: Who's Working, Who's Caring for the Kids, and What Policies Might Help
 
 * This Do file uses a pre-generated data dictionary from IPUMS to format the CPS extract.
 * We save a data file--the reformatted January 2020 Basic CPS sample 
-* NOTE: You need to set the Stata working directory to the path where the data file is located.
+
+* NOTE(S): 
+* 1. You need to set the Stata working directory to the path where the data file is located.
+* 2. You also need to ensure that the CPS data extract file name reflects the file name of your query (see line 56).
 
 /*
 Variables are: 
@@ -26,7 +30,7 @@ P 		LABFORCE 	Labor force status
 P 		OCC 		Occupation
 */
 
-local datasource [fill] 
+local datasource [fill]
 
 set more off
 
@@ -49,7 +53,7 @@ quietly infix                ///
   byte    empstat   95-96    ///
   byte    labforce  97-97    ///
   int     occ       98-101   ///
-  using "`datasource'/cps_00008.dat"
+  using "`datasource'/cps_00025.dat"
 
 replace hwtfinl  = hwtfinl  / 10000
 replace wtfinl   = wtfinl   / 10000
