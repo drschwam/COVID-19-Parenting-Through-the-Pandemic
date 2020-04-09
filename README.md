@@ -31,8 +31,7 @@ Data extract from the CPS downloaded on March 17, 2020 by Daniel Schwam.
 
 ## Project Members:
 
-Jeffrey Wenger (jbw@rand.org)
-Kathryn Edwards (kedwards@rand.org) 
+Kathryn Edwards (kathryne@rand.org) 
 Daniel Schwam (dschwam@rand.org)
 
 * Feel free to contact team leads with any questions or if you are interested in contributing!
